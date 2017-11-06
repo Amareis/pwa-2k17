@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>PWA 2k17</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/my.css">
+		<link rel="stylesheet" href="css/my.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,69 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h4 class="fragment">PWA в 2017: набор хаков, <br>чтобы все работало как надо</h4>
+					<h4 id="strike1">PWA в 2017: плюсы, минусы и грабли</h4>
+					<p>Плесских Иван</p>
+				</section>
+				<section>
+					<h5>Калибровка на аудиторию</h5>
+					<p class="fragment">Знаете что такое PWA?</p>
+					<p class="fragment">Используете?</p>
+					<p class="fragment">Почему нет?</p>
+				</section>
+				<section>
+					<h5>Быстрое введение в тему</h5>
+					<p class="fragment">Что говорит гугл?</p>
+					<img class="fragment" src="img/pva.png" />
+					<p class="fragment">Тема раскрыта слабовато (особенно в рунете)</p>
+				</section>
+				<section>
+					<h5>Быстрое введение в тему</h5>
+					<q>Progressive Web App (PWA) is a term used to denote web applications that use the latest web technologies.</q>
+					<p class="fragment">Серьёзно?</p>
+					<q class="fragment">Progressive Web Apps, also known as Installable Web Apps or Hybrid Web Apps, are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications. The application type attempts to combine features offered by most modern browsers with the benefits of mobile experience.</q>
+				</section>
+				<section>
+					<h5>Быстрое введение в тему своими словами</h5>
+					<ol>
+						<li class="fragment">Обычный сайт (или SPA)</li>
+						<li class="fragment">Работа offline</li>
+						<li class="fragment">Пуши</li>
+						<li class="fragment">Отдельная иконка на мобилках</li>
+						<li class="fragment">???</li>
+						<li class="fragment">PWA!</li>
+					</ol>
+				</section>
+				<section>
+					<h5>Зачем вообще нужно?</h5>
+					<ol start="2">
+						<li>Работа offline</li>
+						<li>Пуши</li>
+						<li>Отдельная иконка на мобилках</li>
+					</ol>
+					<p class="fragment">Главные преимущества приложений,<br>но не паримся с самим приложением!</p>
+				</section>
+				<section>
+					<h5>Калибровка на аудиторию</h5>
+					<p class="fragment">Мобильное приложение есть/надо?</p>
+					<p class="fragment">Разработчиков искали/ищете?</p>
+					<p class="fragment">Долго искали/как успехи?</p>
+				</section>
+				<section>
+					<h5>Прекрасный новый мир</h5>
+					<p class="fragment">Никаких больше нативных приложений!</p>
+					<p class="fragment">Никаких больше айоcников и андроидщиков!</p>
+					<p class="fragment">(винфоны все равно никто не использует)</p>
+					<p class="fragment">(но PWA на них работать будут, Microsoft обещает)</p>
+					<p class="fragment">Bye Java, Kotlin, Swift, Obj-C, C# and more and more...</p>
+					<h1 class="fragment">ALL HAIL JAVASCRIPT!</h1>
+				</section>
+				<section>
+					<p class="fragment">Примерно так это расписывает гугл, <br>который и продвигает PWA.</p>
+					<p class="fragment">Но, как всем нам прекрасно известно, <br>у любой утопии есть изнанка...</p>
+					<p class="fragment">А серебрянные пули — сказка для взрослых,<br>уставших от несовершенства этого мира.</p>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +99,12 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                width: 1100,
+				controls: false,
+                defaultTiming: 0,
+                slideNumber: true,
+				viewDistance: 1000,
+                history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
