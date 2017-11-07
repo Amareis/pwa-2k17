@@ -15,7 +15,7 @@
 
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
+			let link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
@@ -51,7 +51,7 @@
 				<section>
 					<h5>Быстрое введение в тему своими словами</h5>
 					<ol>
-						<li class="fragment">Обычный сайт (или SPA)</li>
+						<li class="fragment">Обычный сайт (или SPA), https</li>
 						<li class="fragment">Работа offline</li>
 						<li class="fragment">Пуши</li>
 						<li class="fragment">Отдельная иконка на мобилках</li>
@@ -61,10 +61,11 @@
 				</section>
 				<section>
 					<h5>Зачем вообще нужно?</h5>
-					<ol start="2">
+					<ol>
 						<li>Работа offline</li>
 						<li>Пуши</li>
 						<li>Отдельная иконка на мобилках</li>
+						<li class="fragment">Выше в поисковой выдаче (+ https)</li>
 					</ol>
 					<p class="fragment">Главные преимущества приложений,<br>но не паримся с самим приложением!</p>
 				</section>
@@ -87,6 +88,29 @@
 					<p class="fragment">Примерно так это расписывает гугл, <br>который и продвигает PWA.</p>
 					<p class="fragment">Но, как всем нам прекрасно известно, <br>у любой утопии есть изнанка...</p>
 					<p class="fragment">А серебрянные пули — сказка для взрослых,<br>уставших от несовершенства этого мира.</p>
+				</section>
+				<section>
+					<h5>Трезвый взгляд</h5>
+					<ol>
+						<li class="fragment">Медленно <span class="fragment">(но...)</span></li>
+						<li class="fragment">Неполноценно <span class="fragment">(но...)</span></li>
+						<li class="fragment">Android-only <span class="fragment">(но...)</span></li>
+					</ol>
+				</section>
+				<section>
+					<h5>Скорость</h5>
+					<p>Все же, это веб, со всеми вытекающими.</p>
+					<p class="fragment">Но прямыми руками его можно и разогнать.</p>
+					<p class="fragment">Что сложнее, чем сделать быстрое приложение,<br>но сложность компенсируется синергией.</p>
+					<p class="fragment">Ведь ускорение PWA ускоряет и сайт!</p>
+					<p class="fragment">К теме синергии ещё вернемся.</p>
+				</section>
+				<section>
+					<h5>Ограниченность</h5>
+					<p>Опять же, это веб.</p>
+					<p class="fragment">Но, на самом деле, многим и этого хватит.</p>
+					<p class="fragment">Для content-first сайтов - вариант отличный.</p>
+					<p class="fragment">Пример, упирающийся в ограничения веба?</p>
 				</section>
 			</div>
 		</div>
