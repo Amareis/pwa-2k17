@@ -166,35 +166,13 @@
 					<p class="fragment">Сафари - это новый Internet Explorer</p>
 				</section>
 				<section>
-					<h5>Android</h5>
-					<p class="fragment">Ставится легко, но сложно</p>
-					<p class="fragment">Под силу даже бухгалтеру</p>
-					<p class="fragment">Места не занимает вообще <span class="fragment">(ну... Только кеш :)</span></p>
-					<p class="fragment">Но требует Хром, что плохо</p>
-					<p class="fragment">Нет тонкого управления пушами</p>
-					<p class="fragment">Можно сделать обычное приложение</p>
-					<p class="fragment">(бонус в конце презентации)</p>
-				</section>
-				<section>
-					<h5>iOS</h5>
-					<p class="fragment">Выглядит как обычное приложение</p>
-					<p class="fragment">Места занимает мало, WebView на марше</p>
-					<p class="fragment">Обновления благодаря WebView видны сразу</p>
-					<p class="fragment">Верстаем под обычный мобильный Сафари</p>
-					<p class="fragment">Использует PhoneGap с кучей <del>костылей</del> плагинов</p>
-					<p class="fragment">Чтобы все заработало, пришлось постараться</p>
-				</section>
-				<section>
-					<h5>App Store</h5>
-				</section>
-				<section>
 					<h5>Калибровка на аудиторию</h5>
 					<p class="fragment">Сафари кто-нибудь любит?</p>
 					<p class="fragment">А мобильный Сафари?</p>
 					<p class="fragment">А как разработчик? :)</p>
 				</section>
 				<section>
-					<h5>Косяки Сафари</h5>
+					<h5>Лирическое отступление — косяки Сафари</h5>
 					<p class="fragment">Ориентация фотографий в EXIF</p>
 					<p class="fragment">Решение — крутить фотки на сервере</p>
 					<p class="fragment">Не позволяет отправить созданный вручную файл</p>
@@ -204,6 +182,15 @@
 				</section>
 				<section>
 					<h5>Косяки Сафари: часть 2</h5>
+					<p class="fragment">Не снимает фокус с поля ввода при клике в никуда</p>
+					<p class="fragment">Решение — установить tabindex на body</p>
+					<p class="fragment">Но тогда при клике в никуда все моргает серым</p>
+					<p class="fragment">Решение — -webkit-tap-highlight-color: transparent</p>
+					<p class="fragment">Почему не использовать кнопку "Done"?</p>
+					<p class="fragment">Об этом — далее</p>
+				</section>
+				<section>
+					<h5>Косяки Сафари: часть 3</h5>
 					<p class="fragment">fetch косячит в 11.0 (11.1 нормально)</p>
 					<pre class="fragment"><code data-trim>
 						fetch('http://example.com/fkin-big.file')
@@ -218,13 +205,49 @@
 					<p class="fragment">Решение — использовать полифилл</p>
 				</section>
 				<section>
-					<h5>Косяки Сафари: часть 3</h5>
-					<p class="fragment">Не снимает фокус с поля ввода при клике в никуда</p>
-					<p class="fragment">Решение — установить tabindex на body</p>
-					<p class="fragment">Но тогда при клике в никуда все моргает серым</p>
-					<p class="fragment">Решение — -webkit-tap-highlight-color: transparent</p>
-					<p class="fragment">Почему не использовать кнопку "Done"?</p>
-					<p class="fragment">Об этом — далее</p>
+					<h5>Шаги для Android</h5>
+					<ol>
+						<li class="fragment">Идём в гугл</li>
+						<li class="fragment">Добавляем манифест</li>
+						<li class="fragment">Добавляем service worker</li>
+						<li class="fragment">Немного колдуем с FCM</li>
+						<li class="fragment">Охапка дров</li>
+						<li class="fragment">PWA готов!</li>
+					</ol>
+				</section>
+				<section>
+					<h5>Результат на Android</h5>
+					<p class="fragment">Ставится легко, но сложно</p>
+					<p class="fragment">Под силу даже бухгалтеру</p>
+					<p class="fragment">Места не занимает вообще <span class="fragment">(ну... Только кеш :)</span></p>
+					<p class="fragment">Но требует Хром, что плохо</p>
+					<p class="fragment">Нет тонкого управления пушами</p>
+					<p class="fragment">Можно сделать обычное приложение</p>
+					<p class="fragment">(бонус в конце презентации)</p>
+				</section>
+				<section>
+					<h5>Шаги для iOS</h5>
+					<ol>
+						<li class="fragment">Идём в гугл</li>
+						<li class="fragment"><img src="img/pwa-ios.png" /></li>
+						<li class="fragment">Всё ещё любите Сафари?</li>
+						<li class="fragment">Снова идем в гугл, много ищем</li>
+						<li class="fragment">Покупаем Mac</li>
+						<li class="fragment">Напряженно костыляем</li>
+						<li class="fragment">Псевдо-PWA готов!</li>
+					</ol>
+				</section>
+				<section>
+					<h5>Результат на iOS</h5>
+					<p class="fragment">Выглядит как обычное приложение</p>
+					<p class="fragment">Использует PhoneGap с кучей <del>костылей</del> плагинов</p>
+					<p class="fragment">Верстаем под обычный мобильный Сафари</p>
+					<p class="fragment">Места занимает мало, WebView на марше</p>
+					<p class="fragment">Обновления благодаря WebView видны сразу</p>
+					<p class="fragment">Чтобы все заработало, пришлось постараться</p>
+				</section>
+				<section>
+					<h5>App Store Story</h5>
 				</section>
 			</div>
 		</div>
