@@ -36,8 +36,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h4 class="fragment">PWA в 2017: набор хаков, <br>чтобы все работало как надо</h4>
-					<h4 id="strike1">PWA в 2017: плюсы, минусы и грабли</h4>
+					<h4>PWA в 2017: плюсы, минусы и грабли<span class="fragment">,<br> а также набор хаков, чтобы все работало на iOS</span></h4>
 					<p>Плесских Иван</p>
 				</section>
 				<section>
@@ -191,7 +190,7 @@
 				</section>
 				<section>
 					<h5>Косяки Сафари: часть 3</h5>
-					<p class="fragment">fetch косячит в 11.0 (11.1 нормально)</p>
+					<p class="fragment">fetch косячит в 11.0 (в 11.1 нормально)</p>
 					<pre class="fragment"><code data-trim>
 						fetch('http://example.com/fkin-big.file')
 						.then(function(resp) {
@@ -217,10 +216,10 @@
 				</section>
 				<section>
 					<h5>Результат на Android</h5>
-					<p class="fragment">Ставится легко, но сложно</p>
-					<p class="fragment">Под силу даже бухгалтеру</p>
 					<p class="fragment">Места не занимает вообще <span class="fragment">(ну... Только кеш :)</span></p>
 					<p class="fragment">Но требует Хром, что плохо</p>
+					<p class="fragment">Ставится легко, но сложно</p>
+					<p class="fragment">Под силу даже бухгалтеру</p>
 					<p class="fragment">Нет тонкого управления пушами</p>
 					<p class="fragment">Можно сделать обычное приложение</p>
 					<p class="fragment">(бонус в конце презентации)</p>
@@ -248,6 +247,23 @@
 				</section>
 				<section>
 					<h5>App Store Story</h5>
+				</section>
+				<section>
+					<h5>PhoneGap Tale I</h5>
+					<p class="fragment">Необходимо дать сайту доступ к Cordova API</p>
+					<p class="fragment">Решение — <code>cordova-plugin-remote-injection</code></p>
+					<p class="fragment">Надо запретить левым сайтам доступ к Cordova API</p>
+					<p class="fragment">Решение — <code>cordova-plugin-whitelist</code></p>
+					<p class="fragment">В исключения добавляем домены стейджинга</p>
+					<p class="fragment">Используем ngrok для разработки в условиях, <br>максимально приближенных к боевым</p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale II</h5>
+					<p class="fragment">Нужны пуши</p>
+					<p class="fragment">Решение — <code>cordova-plugin-fcm</code></p>
+					<p class="fragment">Он же позволяет установить бейдж на иконке <img src="img/badge.png" /></p>
+					<p class="fragment">APNS content-available — пришлось допиливать</p>
+					<p class="fragment"><a href="https://github.com/Amareis/cordova-plugin-fcm">https://github.com/Amareis/cordova-plugin-fcm</a></p>
 				</section>
 			</div>
 		</div>
