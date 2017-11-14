@@ -263,7 +263,54 @@
 					<p class="fragment">Решение — <code>cordova-plugin-fcm</code></p>
 					<p class="fragment">Он же позволяет установить бейдж на иконке <img src="img/badge.png" /></p>
 					<p class="fragment">APNS content-available — пришлось допиливать</p>
+					<p class="fragment">Отписка от пушей — та же история (метод kill)</p>
 					<p class="fragment"><a href="https://github.com/Amareis/cordova-plugin-fcm">https://github.com/Amareis/cordova-plugin-fcm</a></p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale III</h5>
+					<p class="fragment">Плагин для FCM ломает компиляцию приложения</p>
+					<p class="fragment">Решение — вручную скопировать нужный файл</p>
+					<p class="fragment">Отписка от пушей не работает в оффлайне</p>
+					<p class="fragment">Решение — не давать отписываться в оффлайне</p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale IV</h5>
+					<p class="fragment">Первый запуск приложения должен быть онлайн</p>
+					<p class="fragment">Решение — ErrorUrl + настройка remote-injection</p>
+					<p class="fragment">Полоска над iOS клавиатурой</p>
+					<p class="fragment">Решение — <code>cordova-plugin-keyboard</code> + HideKeyboardFormAccessoryBar</p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale V</h5>
+					<p class="fragment"><code>phonegap-plugin-service-worker</code> не реджектит fetch при ошибках сети</p>
+					<p class="fragment">Решение — использовать форк с fetch полифиллом</p>
+					<p class="fragment">Кеш плагина сильно раздувается</p>
+					<p class="fragment">Решение — использовать форки (?),<br> кастомная логика сброса кеша через postMessage</p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale VI</h5>
+					<p class="fragment">Отладка?</p>
+					<p class="fragment">XCode, console.log, Safari Remote Debug, weinre</p>
+					<p class="fragment">Проблемы со сборкой<br>(не отображаются изменения в файлах)</p>
+					<p class="fragment">Решение — <code>cd ../.. && phonegap prepare ios</code><br> в Build Phases</p>
+				</section>
+				<section>
+					<h5>PhoneGap Tale X</h5>
+					<p class="fragment">Просто набор плагинов, которые нужны для начала </p>
+					<p class="fragment">cordova-plugin-badge<br>
+						cordova-plugin-console<br>
+						cordova-plugin-inappbrowser<br>
+						cordova-plugin-media-capture<br>
+						cordova-plugin-splashscreen<br>
+						cordova-plugin-statusbar
+					</p>
+				</section>
+				<section>
+					<h5>Реклама</h5>
+					<p class="fragment">Ищем айосника, $300 за рекомендацию :)<br><a href="http://gudex-start.tilda.ws">gudex-start.tilda.ws</a></p>
+				</section>
+				<section>
+					<h5>Бонус!</h5>
 				</section>
 			</div>
 		</div>
