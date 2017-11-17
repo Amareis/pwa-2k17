@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - 4.1.1
+before_script:
+  - npm install -g grunt-cli
+script:
+    - npm run build -- --force
+cache:
+  directories:
+    - "node_modules"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
+
+notifications:
+  email: false
