@@ -47,36 +47,22 @@
 				</section>
 				<section>
 					<h5>Быстрое введение в тему</h5>
-					<p class="fragment">Что говорит гугл про PWA?</p>
-					<img class="fragment" src="img/pva.png" />
-					<p class="fragment">Тема раскрыта слабовато (особенно в рунете)</p>
-				</section>
-				<section>
-					<h5>Быстрое введение в тему</h5>
-					<q>Progressive Web App (PWA) is a term used to denote web applications that use the latest web technologies.</q>
+					<p class="fragment">Идём в гугл</p>
+					<img class="fragment" src="img/pva.png" /><br>
+					<q class="fragment">Progressive Web App (PWA) is a term used to denote web applications that use the latest web technologies.</q>
 					<p class="fragment">Серьёзно?</p>
-					<q class="fragment">Progressive Web Apps, also known as Installable Web Apps or Hybrid Web Apps, are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications. The application type attempts to combine features offered by most modern browsers with the benefits of mobile experience.</q>
+					<q class="fragment">Progressive Web Apps are regular web pages or websites, but can appear to the user like traditional applications or native mobile applications.</q>
 				</section>
 				<section>
 					<h5>Быстрое введение в тему своими словами</h5>
+                    <p>PWA — это:</p>
 					<ol>
-						<li class="fragment">Обычный сайт (или SPA), https</li>
+                        <li class="fragment"><span style="text-decoration: underline">Обычный сайт</span> (лучше SPA), https</li>
+                        <li class="fragment">Отдельная иконка на мобилках</li>
+                        <li class="fragment">Пуши</li>
 						<li class="fragment">Работа offline</li>
-						<li class="fragment">Пуши</li>
-						<li class="fragment">Отдельная иконка на мобилках</li>
-						<li class="fragment">???</li>
-						<li class="fragment">PWA!</li>
 					</ol>
-				</section>
-				<section>
-					<h5>Зачем вообще нужно?</h5>
-					<ol>
-						<li>Работа offline</li>
-						<li>Пуши</li>
-						<li>Отдельная иконка на мобилках</li>
-						<li class="fragment">Выше в поисковой выдаче (+ https)</li>
-					</ol>
-					<p class="fragment">Главные преимущества приложений,<br>но не паримся с самим приложением!</p>
+                    <p class="fragment">То есть, как приложение, только сайт</p>
 				</section>
 				<section>
 					<h5>Калибровка на аудиторию</h5>
@@ -94,162 +80,97 @@
 					<h1 class="fragment">ALL HAIL JAVASCRIPT!</h1>
 				</section>
 				<section>
-					<p class="fragment">Примерно так это расписывает гугл, <br>который и продвигает PWA</p>
-					<p class="fragment">Но, как всем нам прекрасно известно, <br>у любой утопии есть изнанка...</p>
-					<p class="fragment">А серебрянные пули — сказка для взрослых,<br>уставших от несовершенства этого мира</p>
-				</section>
-				<section>
-					<h5>Трезвый взгляд</h5>
+					<h5>Трезвый взгляд: все же, это веб</h5>
 					<ol>
-						<li class="fragment">Медленно <span class="fragment">(но...)</span></li>
+                        <li class="fragment">Все просто и знакомо</li>
+                        <li class="fragment">Обновления доставляются моментально</li>
+						<li class="fragment">Медленно <span class="fragment">(но...)</span> <span class="fragment">(и еще одно но...)</span></li>
 						<li class="fragment">Неполноценно <span class="fragment">(но...)</span></li>
 						<li class="fragment">Android-only <span class="fragment">(но...)</span></li>
+                        <li class="fragment">Зато выше в поисковой выдаче :)</li>
 					</ol>
 				</section>
 				<section>
-					<h5>Скорость</h5>
-					<p>Все же, это веб, со всеми вытекающими</p>
-					<p class="fragment">Но прямыми руками его можно и разогнать</p>
-					<p class="fragment">Что сложнее, чем сделать быстрое приложение,<br>но сложность компенсируется синергией</p>
-					<p class="fragment">Ведь ускорение PWA ускоряет и сайт!</p>
-					<p class="fragment">К теме синергии ещё вернемся</p>
-				</section>
-				<section>
-					<h5>Ограниченность</h5>
-					<p>Опять же, это веб.</p>
-					<p class="fragment">Но, на самом деле, многим и этого хватит</p>
-					<p class="fragment">Для content-first сайтов - вариант отличный</p>
-					<p class="fragment">Пример, упирающийся в ограничения веба?</p>
-					<p class="fragment">Нет, я не забыл его вписать, просто не знаю</p>
-				</section>
-				<section>
-					<h5>Поддержка</h5>
-					<p>Chrome for Android <span class="fragment">(и то с ограничениями)</span></p>
-					<p class="fragment">Обязателен, собственно, Chrome <span class="fragment">(что не так критично)</span> </p>
-					<p class="fragment">Установка нова для пользователя <span class="fragment">(но это поправимо)</span></p>
-					<p class="fragment">iOS в пролёте <span class="fragment">(но можно кое-что накостылять)</span></p>
-					<p class="fragment">А Windows 10 Mobile все равно никто не пользуется :)</p>
-					<p class="fragment">(но Microsoft обещает что PWA у них будет, ждём)</p>
-				</section>
-				<section>
-					<h5>Наше приложение</h5>
+					<h5>Больше конкретики: наша история</h5>
 					<ol>
 						<li>Мессенджер</li>
 						<li>SPA, React+Redux</li>
 						<li>Мобила очень нужна</li>
 						<li>iOS в приоритете</li>
 					</ol>
-				</section>
-				<section>
-					<h5>Завязка</h5>
-					<p>Есть сайт, очень нужна мобильная версия,<br> причем в основном под iOS</p>
 					<p class="fragment">Айосников в Челябинске...</p>
-					<p class="fragment">Неосторожно пророненное мной "PWA" рождает искру</p>
-					<p class="fragment">В итоге ПМ постановляет: будем пробовать</p>
+					<p class="fragment">Упоминание PWA рождает искру надежды</p>
+					<p class="fragment">Альтернатив не видно, решили пробовать</p>
 				</section>
 				<section>
-					<h5>И сразу развязка</h5>
-					<p class="fragment">Есть приложения для Android и iOS</p>
-					<p class="fragment">Под андроид (пока) ставится через хром</p>
-					<p class="fragment">Костылей под iOS в js не так уж и много</p>
-					<p class="fragment">App Store одобрил</p>
-					<p class="fragment">На айоснике сэкономили :)</p>
-				</section>
-				<section>
-					<h5>Промежуточные выводы</h5>
-					<p class="fragment">В идеале все делается очень просто</p>
-					<p class="fragment">В реальности тоже не слишком сложно</p>
-					<p class="fragment">Синергия действительно работает</p>
-					<p class="fragment">Обновления доставляются моментально</p>
-					<p class="fragment">Упрощает проверку гипотез</p>
-					<p class="fragment">Сафари - это новый Internet Explorer</p>
-				</section>
-				<section>
-					<h5>Калибровка на аудиторию</h5>
-					<p class="fragment">Сафари кто-нибудь любит?</p>
-					<p class="fragment">А мобильный?</p>
-					<p class="fragment">А как разработчик? :)</p>
-				</section>
-				<section>
-					<h5>Лирическое отступление — косяки Сафари</h5>
-					<p class="fragment">Ориентация фотографий в EXIF</p>
-					<p class="fragment">Решение — крутить фотки на сервере</p>
-					<p class="fragment">Не позволяет отправить созданный вручную файл</p>
-					<p class="fragment">Решение — не отправлять созданные вручную файлы</p>
-					<p class="fragment">Аттрибут download на теге a игнорируется</p>
-					<p class="fragment">Решение — явно открывать файл в новой вкладке</p>
-				</section>
-				<section>
-					<h5>Косяки Сафари: часть 2</h5>
-					<p class="fragment">Не снимает фокус с поля ввода при клике в никуда</p>
-					<p class="fragment">Решение — установить tabindex на body</p>
-					<p class="fragment">Но тогда при клике в никуда все моргает серым</p>
-					<p class="fragment">Решение — -webkit-tap-highlight-color: transparent</p>
-					<p class="fragment">Почему не использовать кнопку "Done"?</p>
-					<p class="fragment">Об этом — далее</p>
-				</section>
-				<section>
-					<h5>Косяки Сафари: часть 3</h5>
-					<p class="fragment">fetch косячит в 11.0 (в 11.1 нормально)</p>
-					<pre class="fragment"><code data-trim>
-						fetch('http://example.com/fkin-big.file')
-						.then(function(resp) {
-							resp.clone()
-							resp.clone() //здесь может быть event.respondWith
-						}).catch(function(err) {
-							console.log(err.message)
-						})
-					</code></pre>
-					<p class="fragment">"Cannot clone a disturbed Response"</p>
-					<p class="fragment">Решение — использовать полифилл</p>
-				</section>
-				<section>
-					<h5>Шаги для Android</h5>
+					<h5>Android: всё идеально</h5>
 					<ol>
 						<li class="fragment">Идём в гугл</li>
 						<li class="fragment">Добавляем манифест</li>
 						<li class="fragment">Добавляем service worker</li>
 						<li class="fragment">Немного колдуем с FCM</li>
-						<li class="fragment">Охапка дров</li>
-						<li class="fragment">PWA готов!</li>
+						<li class="fragment">Охапка дров и PWA готов!</li>
 					</ol>
 				</section>
 				<section>
-					<h5>Результат на Android</h5>
-					<p class="fragment">Места не занимает вообще <span class="fragment">(ну... Только кеш :)</span></p>
+					<h5>Android: итоги</h5>
+					<p class="fragment">Места не занимает <span class="fragment">(ну... Только кеш :)</span></p>
 					<p class="fragment">Но требует Хром, что плохо</p>
-					<p class="fragment">Ставится легко, но сложно</p>
-					<p class="fragment">Под силу даже бухгалтеру</p>
-					<p class="fragment">Нет тонкого управления пушами</p>
-					<p class="fragment">Можно сделать обычное приложение</p>
+					<p class="fragment">Устанавливается непривычно</p>
+					<p class="fragment">(но наш бухгалтер справилась)</p>
+					<p class="fragment">Хочется более тонкого управления пушами</p>
+					<p class="fragment">Можно конвертировать в обычное приложение</p>
 				</section>
-				<section>
-					<h5>Шаги для iOS</h5>
-					<ol>
-						<li class="fragment">Идём в гугл</li>
-						<li class="fragment"><img src="img/pwa-ios.png" /></li>
-						<li class="fragment">Всё ещё любите Сафари?</li>
-						<li class="fragment">Снова идем в гугл, много ищем</li>
+                <section>
+                    <h5>iOS</h5>
+                    <ol>
+                        <li class="fragment">Идём в гугл</li>
+                        <li class="fragment"><img src="img/pwa-ios.png" /></li>
+                        <li class="fragment">Всё ещё любите Сафари?</li>
+                    </ol>
+                </section>
+                <section>
+                    <h5>Калибровка на аудиторию</h5>
+                    <p class="fragment">Сафари вообще кто-нибудь любит?</p>
+                    <p class="fragment">А мобильный?</p>
+                    <p class="fragment">А как разработчик? :)</p>
+                </section>
+                <section>
+                    <h5>iOS: ...</h5>
+                    <ol>
+						<li class="fragment">Идём в гугл, много ищем</li>
 						<li class="fragment">Покупаем Mac</li>
 						<li class="fragment">Напряженно костыляем</li>
 						<li class="fragment">Псевдо-PWA готов!</li>
 					</ol>
 				</section>
 				<section>
-					<h5>Результат на iOS</h5>
+					<h5>iOS: итоги</h5>
 					<p class="fragment">Выглядит как обычное приложение</p>
-					<p class="fragment">Использует PhoneGap с кучей <del>костылей</del> плагинов</p>
-					<p class="fragment">Верстаем под обычный мобильный Сафари</p>
+					<p class="fragment">Используется PhoneGap с кучей <del>костылей</del> плагинов</p>
 					<p class="fragment">Места занимает мало, WebView на марше</p>
-					<p class="fragment">Обновления благодаря WebView видны сразу</p>
+                    <p class="fragment">(то есть верстаем под мобильный Сафари)</p>
+					<p class="fragment">Обновления, в отличии от PhoneGap, видны сразу</p>
+                    <p class="fragment">На код сайта повлияло не сильно</p>
 					<p class="fragment">Чтобы все заработало, пришлось постараться</p>
+                    <p class="fragment">Сафари — это новый Internet Explorer</p>
 				</section>
 				<section>
 					<h5>App Store Story</h5>
-					<p class="fragment">Одобрено</p>
+                    <img class="fragment" src="img/appstore.jpg" />
+					<p class="fragment">Одобрили за 12 часов</p>
 					<p class="fragment">Мы думали, будет гораздо сложнее</p>
-					<img class="fragment" src="img/appstore.jpg" />
 				</section>
+                <section>
+                    <h4>Техническая часть</h4>
+                    <h5>It's all 'bout Phonegap</h5>
+                    <p class="fragment">Слышали о таком?</p>
+                    <p class="fragment">Основан на Apache Cordova</p>
+                    <p class="fragment">WebView с доступом к нативному коду через JavaScript</p>
+                    <p class="fragment">Позволяет создавать нетривиальные полифиллы</p>
+                    <p class="fragment">Обычно вся статика запакована внутрь приложения</p>
+                    <p class="fragment">Но...</p>
+                </section>
 				<section>
 					<h5>PhoneGap Tale I</h5>
 					<p class="fragment">Необходимо дать сайту доступ к Cordova API</p>
@@ -281,6 +202,7 @@
 					<p class="fragment">Решение — ErrorUrl + настройка remote-injection</p>
 					<p class="fragment">Полоска над iOS клавиатурой</p>
 					<p class="fragment">Решение — <code>cordova-plugin-keyboard</code> + HideKeyboardFormAccessoryBar</p>
+                    <p class="fragment">Чтобы убирать фокус с поля ввода тапом в никуда<br>tabindex и -webkit-tap-highlight-color: transparent на body</p>
 				</section>
 				<section>
 					<h5>PhoneGap Tale V</h5>
@@ -288,12 +210,14 @@
 					<p class="fragment">Решение — использовать форк с fetch полифиллом</p>
 					<p class="fragment">Кеш плагина сильно раздувается</p>
 					<p class="fragment">Решение — использовать форки (?),<br> кастомная логика сброса кеша через postMessage</p>
+                    <p class="fragment">Вообще, он должен быть совместим с дефолтным сервис воркером сайта</p>
 				</section>
 				<section>
 					<h5>PhoneGap Tale VI</h5>
 					<p class="fragment">Отладка?</p>
 					<p class="fragment">XCode, console.log, Safari Remote Debug, weinre</p>
-					<p class="fragment">Проблемы со сборкой<br>(не отображаются изменения в файлах)</p>
+					<p class="fragment">Проблемы со сборкой в XCode<br>(не отображаются изменения в файлах)</p>
+                    <p class="fragment">phonegap build косячит с provisioning profiles</p>
 					<p class="fragment">Решение — <code>cd ../.. && phonegap prepare ios</code><br> в Build Phases</p>
 				</section>
 				<section>
@@ -309,14 +233,15 @@
 				</section>
 				<section>
 					<h5>Итоги</h5>
+                    <img class="fragment" src="img/peak.png" />
 					<p class="fragment">PWA сейчас на хайпе, но ещё не взлетели</p>
-					<p class="fragment">Применять можно уже сейчас,<br>хотя не хватает нормальных полифиллов</p>
-					<p class="fragment">Как минимум, стоит ознакомиться,<br>чтобы потом не было мучительно больно</p>
+					<p class="fragment">Применять можно уже сейчас,<br>хотя с iOS придется попотеть</p>
+					<p class="fragment">Cтоит ознакомиться,<br>чтобы потом не было мучительно больно</p>
 				</section>
 				<section>
 					<div  class="fragment">
 						<h5>Спасибо за внимание!</h5>
-						<p style="font-size: 8px;">Ищем айосника, $300 за рекомендацию :)<br><a href="http://gudex-start.tilda.ws">gudex-start.tilda.ws</a></p>
+						<p style="font-size: 12px;">Ищем айосника, $300 за рекомендацию :)<br><a href="http://gudex-start.tilda.ws">gudex-start.tilda.ws</a></p>
 					</div>
 				</section>
 			</div>
